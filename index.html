@@ -1,33 +1,58 @@
+
+
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Open Weather API</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="css/style.css"> 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-  <body ng-app="weatherApp" ng-controller="weatherCtrl" class= "text-center info" ng-style="weatherBackground"><br>
-  <h1>
-  {{channelInfo.heading}}
-  </h1><br><br><br><br><br><br><br><br><br>
-    <button class="btn-lg btn-primary">
-  {{description | uppercase}} <img ng-src="{{icon}}"/>
-    </button>
-    <button class="btn-lg btn-primary">
-  {{speed}}
-    </button>
-    <button class="btn-lg btn-primary">
-  {{name}}
-    </button>
-    <button class="btn-lg btn-primary" ng-init="tempVal=true" ng-show="tempVal" ng-click="tempVal=!tempVal">
-  {{cTemp}}
-    </button>
-    <button class="btn-lg btn-primary" ng-show="!tempVal" ng-click="tempVal=!tempVal">
-  {{fTemp}}
-    </button>     
-<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
-<script  src="js/app.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MK's Pomodoro Clock App</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <main>
+
+            <div class="container">
+                <header class="logo">FreeCodeCamp</header>
+                <div class="setting">
+                    <div class='subset'>
+                        <p >BREAK LENGTH</p>
+                        <p class='change'><button class="break">-</button>
+                            <span class="break-setting">5</span>
+                            <button class="break">+</button>
+                        </p>
+                    </div>
+                    <div class='subset'>
+                        <p >SESSION LENGTH</p>
+                        <p class='change'><button class="session">-</button>
+                             <span class="session-setting">25</span>
+                            <button class="session">+</button>
+                        </p>
+                    </div>
+                </div>
+                 <div >
+                    <canvas id="demo"></canvas>
+                    <div class="type overlay">Session</div>
+                    <div class="countdown overlay">25:00</div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <script   src='https://code.jquery.com/jquery-2.2.4.min.js'   integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44='   crossorigin='anonymous'></script>
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/waterbubble.js"></script>
+
+    </body>
 </html>
+
+
+
+
+
+
